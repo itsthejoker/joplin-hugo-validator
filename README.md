@@ -1,6 +1,6 @@
 #  Joplin Hugo Validator
 
-After finding [this blog post from Jack Adler](https://jalder.dev/posts/joplin-to-hugo/) about maintaining his Hugo blog from inside Joplin, I knew that I wanted to give it a try. However, most of his posts are just text, which means that only the front matter needs to be correct. I frequently use lots of formatting in my own posts, so it was important to make sure that the content I'm sending to Hugo is as valid as I can make it without having access to the Hugo binary.
+After finding [this blog post from Jack Adler](https://jalder.dev/posts/joplin-to-hugo/) about maintaining his Hugo blog from inside Joplin, I knew that I wanted to give it a try. However, I was concerned about pushing malformed content to Hugo without a way to easily get responses back about the success or failure of builds. I frequently use lots of formatting in my own posts, so it was important to make sure that the content I'm sending to Hugo is as valid as I can make it without having access to the Hugo binary.
 
 ## Usage
 
