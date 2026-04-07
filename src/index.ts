@@ -34,8 +34,8 @@ joplin.plugins.register({
                 const errors = [];
 
                 // Success State: Valid Front Matter block at the beginning
-                const yamlFrontMatterRegex = /^-{3}\n(?:[a-z\s]+: ?(?:"?[\w,.\-+:\s?&_]+"?|[\d\-T:+]+|\[]| |(?:\s+- [a-z ]+)+|true|false|null|)\n)+(?:-{3}|\.{3})/;
-                const tomlFrontMatterRegex = /^\+{3}\n(?:[a-z\s]+ = (?:[\d-T:]+|false|'.*')\n|^\[.*]$)+\+{3}/gm;
+                const yamlFrontMatterRegex = /^-{3}\n(?:[a-zA-Z\s]+: ?(?:"?[\w,.\-+:\s?&_]+"?|[\d\-T:+]+|\[]| |(?:\s+- [a-z ]+)+|true|false|null|)\n)+(?:-{3}|\.{3})/;
+                const tomlFrontMatterRegex = /^\+{3}\n(?:[a-zA-Z\s]+ = (?:[\d\-T:]+|false|'.*')\n|^\[.*]$)+\+{3}/gm;
 
                 if (body.startsWith('---')) {
                     if (!yamlFrontMatterRegex.test(body)) {
